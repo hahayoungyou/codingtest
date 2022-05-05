@@ -15,6 +15,9 @@ public class test3 {
             }
                 sum = Math.round( sum/10);
             System.out.format("#%d %d\n", tc,(int)sum); //평균을 구하는 것은 올림 반올림 내림 확인
+            //Math.floor() : 소수점 이하를 버림한다.
+            //Math.ceil() : 소수점 이하를 올림한다.
+            //Math.round() : 소수점 이하를 반올림한다
         }
 
     }
