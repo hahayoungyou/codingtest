@@ -10,7 +10,7 @@ public class test1 {
         System.out.println(T);
 
         for(int k=T ; k >= 0 ; k--){
-            System.out.print(k);
+            System.out.print(k+" ");
         }
 
 
