@@ -38,16 +38,16 @@ public class test2 {
         //22 8 5 123 7 2 63 7 3 46
         //6 63 2 3 58 76 21 33 8 1
         //이런식임
-        Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
-                for( int tc=1; tc<=T; tc++ ) {
-                    int sum = 0;
-                    for( int j=0; j<10; j++ ) {
-                     	int n = sc.nextInt();
-                        if( n%2 == 1 ) sum+=n;
-                    }
-                    System.out.format("#%d %d\n", tc, sum);
-                }
+//        Scanner sc = new Scanner(System.in);
+//        int T = sc.nextInt();
+//                for( int tc=1; tc<=T; tc++ ) {
+//                    int sum = 0;
+//                    for( int j=0; j<10; j++ ) {
+//                     	int n = sc.nextInt();
+//                        if( n%2 == 1 ) sum+=n;
+//                    }
+//                    System.out.format("#%d %d\n", tc, sum);
+//                }
 
 
 
@@ -61,8 +61,8 @@ public class test2 {
        //         if (n % 2 == 1) sum += n;
 
 
-            }
-        }
+        //    }
+        //}
 
     }
 
