@@ -1,2 +1,2 @@
 # codingtest
-할수있다  SSAFY
+할수있다
