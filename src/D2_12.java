@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //스토쿠 검증
-//조금이라도 자고 일어나서 할것,,
+//자고일어나서 좀 고치니 맞았당!!!1
 public class D2_12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class D2_12 {
                     check+=a[i][j];
                 }
                 if(check != 45){
-                    System.out.println(" 1 합이 45가 아니야!");
+                    //System.out.println(" 1 합이 45가 아니야!");
                     flag=false;
                 }
             }
@@ -25,10 +25,10 @@ public class D2_12 {
             for(int i =0;i<9;i++){
                 int check=0;
                 for(int j=0;j<9;j++){
-                    check+=a[i][j];
+                    check+=a[j][i];
                 }
                 if(check != 45){
-                    System.out.println(" 2 합이 45가 아니야!");
+                    //System.out.println(" 2 합이 45가 아니야!");
                     flag=false;
                 }
             }
