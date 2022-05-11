@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 //[S/W 문제해결 기본] 1일차 - 최빈수 구하기
+//답 확인함
 public class D3_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
