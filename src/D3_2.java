@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //정사각형 판정
-//뭘해도 stack overflow가 생겨서 자고일어나서 이어서 하기로
+//ㅠㅜ 내일 다시 고민해보고 다시 풀어야겠음
 public class D3_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -22,13 +22,13 @@ public class D3_2 {
                 int count=0;
                 for(int j=0;j<a;j++){
                     b[i][j]=sc.next();
-                   /* if(b[i][j].equals("#")){
-                        //d[i]=j;
+                    if(b[i][j].equals("#")){
+                        d[i]=j;
                         count++;//길이
-                    }*/
+                    }
                 }
 
-                /*if(count>=1) {
+                if(count>=1) {
                     int k = d[i];
                     for(int w=0;w<count;w++){
                         if (b[i][k].equals("#")) {
@@ -40,12 +40,12 @@ public class D3_2 {
                     }
                 }else{
                     d[i]=0;
-                }*/
-                System.out.println(count);
+                }
+                //System.out.println(count);
          }
 
 
-            /*if(flag) {
+            if(flag) {
 
                 int sum = 0;
                 for (int i = 0; i < a; i++) {
@@ -63,7 +63,7 @@ public class D3_2 {
                 System.out.println("#"+t+" "+"yes");
             }else{
                 System.out.println("#"+t+" "+"no");
-            }*/
+            }
 
 
         }
