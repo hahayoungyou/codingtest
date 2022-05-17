@@ -1,14 +1,26 @@
 import java.util.Scanner;
 
-//거듭제곱
+//3314. 보충학습과 평균
 public class D3_28 {
 
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        for (int t = 1; t <= 10; t++) {
+        int T = sc.nextInt();
 
-            //System.out.println("#"+count+" "+sum);
+        for (int t = 1; t <= T; t++) {
+            int sum=0;
+            int[] a = new int[5];
+            for(int i=0;i<5;i++) {
+                a[i] = sc.nextInt();
+                if(a[i]<40) {
+                    a[i]= 40;
+
+                }
+                sum+=a[i];
+            }
+            System.out.println("#"+t+" "+ (int)sum/5);
+
 
         }
     }
