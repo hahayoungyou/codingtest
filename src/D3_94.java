@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 class D3_94 {
 
-
+//다시 - runtime error
     public static void main(String[] args) throws IOException {
 
         Scanner sc = new Scanner(System.in);
+        int again=0;
             int T=sc.nextInt();
         for (int test_case = 1; test_case <= T; test_case++) {
            long n=sc.nextLong();
