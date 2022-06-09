@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+//1차원배열 나머지
 
 public class baekjoon_8 {
     public static void main(String[] args) throws Exception
