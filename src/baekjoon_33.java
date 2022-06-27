@@ -1,20 +1,33 @@
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
-//소트인사이드
+//좌표정렬하기
 public class baekjoon_33 {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-       String a=sc.next();
-       int[] arr= new int[a.length()];
-       for( int i=0;i<a.length();i++){
-           arr[i]=Character.getNumericValue(a.charAt(i));
+       int n=sc.nextInt();
+       int[][] arr= new int[n][2];
+       for( int i=0;i<n;i++){
+           arr[i][0]=sc.nextInt();
+           arr[i][1]=sc.nextInt();
        }
-       Arrays.sort(arr);
+       //2차원배열 정렬
+        Arrays.sort(arr, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if(o1[0] == o2[0]) {
+                    return o1[1] - o2[1]; //오름차순, 내림차순은 o2[1]-o1[1];
+                }else {
+                    return o1[0] - o2[0];//오름차순, 내림차순은 o2[0]-o1[0];
+                }
+            }
+        });
+        //출처: https://seeminglyjs.tistory.com/164 [Seemingly Online:티스토리]
 
-        for( int i=a.length()-1;i>=0;i--){
-            System.out.print(arr[i]);
+        for( int i=0;i<n;i++){
+            System.out.println(arr[i][0] +" "+arr[i][1]);
         }
 
     }
