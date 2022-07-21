@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-//요세푸 문제
+//요세푸스 문제
 public class baekjoon_50 {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
